@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Row from "../components/row";
 
 const Header = styled.header`
   width: 100%;
@@ -14,9 +15,9 @@ const Footer = styled.footer`
 const MainLayout = ({ children }) => {
   return (
     <div>
-      <Header>Header</Header>
-      {children}
-      <Footer>Footer</Footer>
+      {/* <Header>Header</Header> */}
+      <Row>{children}</Row>
+      {/* <Footer>Footer</Footer> */}
     </div>
   );
 };

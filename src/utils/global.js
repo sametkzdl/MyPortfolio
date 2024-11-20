@@ -22,4 +22,5 @@ export const device = {
 
 export const theme = {
   primary: "#ffb400",
+  hoverColor: "#336cff",
 };
