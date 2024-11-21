@@ -28,13 +28,17 @@ const Company = styled.div`
   text-align: center;
   width: min-content;
   background-color: #fff;
-  > a {
+  a {
+    display: inline-block;
+    height: 100px;
+    display: flex;
+    align-items: center;
     > img {
       max-width: 150px;
       height: auto;
     }
   }
-  > h4 {
+  h4 {
     margin-inline: auto;
     font-size: 20px;
   }
