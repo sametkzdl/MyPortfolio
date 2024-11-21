@@ -41,10 +41,10 @@ const WrapPhoto = styled.div`
   }
 `;
 
-const Mybutton = styled.button`
+export const Mybutton = styled.button`
+  position: relative;
   display: inline-block;
   background-color: ${theme.primary};
-  border-radius: 5px;
   padding: 16px 32px;
   cursor: pointer;
   font-size: 18px;
@@ -52,9 +52,14 @@ const Mybutton = styled.button`
   border: none;
   transition: all 0.3s;
   &:hover {
-    box-shadow: ${theme.hoverColor} 2px 2px 5px,
-      ${theme.hoverColor} -2px -2px 5px;
-    color: ${theme.hoverColor};
+    box-shadow: #605b5b 2px 2px 7px;
+    text-shadow: 4px 4px 10px #8d8484;
+  }
+  &:active {
+    transform: translateY(6px);
+    box-shadow: ${theme.primary} 2px 2px 7px;
+    text-shadow: 4px 4px 10px #d4cbcb;
+    color: #fff;
   }
 `;
 

@@ -3,15 +3,15 @@ import { device } from "../utils/global";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 4rem;
+  margin-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
     font-weight: bold;
+    margin-block: 20px;
   }
-  > p {
-    margin: 40px auto;
-    width: 50%;
+  p {
+    margin-bottom: 20px;
   }
 `;
 

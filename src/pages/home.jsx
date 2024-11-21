@@ -1,4 +1,5 @@
 import Banner from "../components/banner";
+import Contact from "../components/contact";
 import Education from "../components/education";
 import References from "../components/references";
 import Services from "../components/services";
@@ -12,6 +13,7 @@ const Home = () => {
       <Services />
       <Education />
       <Work />
+      <Contact />
     </div>
   );
 };

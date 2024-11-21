@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 4rem;
+  margin-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
     font-weight: bold;
+    margin-block: 20px;
   }
-  > p {
-    margin: 40px auto;
-    width: 50%;
+  p {
+    margin-bottom: 20px;
   }
 `;
 
@@ -23,6 +23,7 @@ const WrapCard = styled.div`
 `;
 
 const Card = styled.div`
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 20rem;
   background-color: #fff;
   padding: 3rem;
@@ -36,22 +37,22 @@ const Services = () => {
   const data = [
     {
       title: "E-ticaret / Web Ön Yüz Geliştirme",
-      imgSrc: "public/images/frontPanel.svg",
+      imgSrc: "images/frontPanel.svg",
       decription: "E-ticaret, Kullanıcı ara yüzü",
     },
     {
       title: "E-ticaret / Web Admin Panel Geliştirme",
-      imgSrc: "public/images/dashboard.svg",
+      imgSrc: "images/dashboard.svg",
       decription: "E-ticaret, Admin paneli",
     },
     {
       title: "WordPress",
-      imgSrc: "public/images/wordPress.svg",
+      imgSrc: "images/wordPress.svg",
       decription: "WordPress site yapımı",
     },
     {
       title: "Blog Web Siteleri",
-      imgSrc: "public/images/blogWebsite.svg",
+      imgSrc: "images/blogWebsite.svg",
       decription: "Kişiye özel site ",
     },
   ];

@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 4rem;
+  margin-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
     font-weight: bold;
+    margin-block: 20px;
   }
-  > p {
-    margin: 40px auto;
-    width: 50%;
+  p {
+    margin-bottom: 20px;
   }
 `;
 
@@ -23,7 +23,8 @@ const WrapCompany = styled.div`
 `;
 
 const Company = styled.div`
-  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem 1.5rem;
   text-align: center;
   width: min-content;
   background-color: #fff;
@@ -42,17 +43,17 @@ const Company = styled.div`
 const References = () => {
   const data = [
     {
-      imgSrc: "public/icons/sistemPlus.png",
+      imgSrc: "icons/sistemPlus.png",
       name: "Sistem Plus Yazılım Bilgi Teknolojileri San. ve Tic. A.Ş.",
       href: "https://sistem.plus/",
     },
     {
-      imgSrc: "public/icons/hanımeli.png",
+      imgSrc: "icons/hanımeli.png",
       name: "Hanımeli Yemek Hizmetleri Şirketi",
       href: "https://hanimeliportal.com/en/login",
     },
     {
-      imgSrc: "public/icons/xAkademi.png",
+      imgSrc: "icons/xAkademi.png",
       name: "X Akademi Koçluk Eğitim Platformu",
       href: "https://sametkzdl.github.io/CoachWebSite/",
     },
@@ -62,9 +63,9 @@ const References = () => {
       <h3>Referanslar </h3>
       <p>Hizmet verdiğim kurum ve kuruluşlar ...</p>
       <WrapCompany>
-        {data.map((item) => {
+        {data.map((item, id) => {
           return (
-            <Company>
+            <Company key={id}>
               <a href={item.href}>
                 <img alt={item.imgSrc} src={item.imgSrc} />
               </a>
