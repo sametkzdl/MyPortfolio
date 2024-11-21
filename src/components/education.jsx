@@ -26,6 +26,7 @@ const Card = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   > div {
     text-align: left;
     > h3 {
@@ -33,8 +34,14 @@ const Card = styled.div`
       font-weight: 600;
     }
     > h4 {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 28px;
       font-size: 16px;
       font-weight: 400;
+      > span {
+        background-color: #ffb400;
+      }
     }
     > p {
       font-weight: 300;
@@ -115,9 +122,7 @@ const Education = () => {
                 <h3>{item.school}</h3>
                 <h4>
                   {item.role}&nbsp;&nbsp;&nbsp;
-                  <span style={{ backgroundColor: "#ffb400", padding: " 6px" }}>
-                    &nbsp;&nbsp;&nbsp;{item.date}
-                  </span>
+                  <span>{item.date}</span>
                 </h4>
               </div>
               <div>
