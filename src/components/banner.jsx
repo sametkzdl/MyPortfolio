@@ -47,11 +47,12 @@ const Mybutton = styled.button`
   border-radius: 5px;
   padding: 16px 32px;
   cursor: pointer;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   border: none;
   transition: all 0.3s;
   &:hover {
-    box-shadow: ${theme.hoverColor} 2px 2px 15px,
+    box-shadow: ${theme.hoverColor} 2px 2px 5px,
       ${theme.hoverColor} -2px -2px 5px;
     color: ${theme.hoverColor};
   }

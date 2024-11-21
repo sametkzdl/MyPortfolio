@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../utils/global";
 
 const Wrap = styled.div`
   width: 100%;
