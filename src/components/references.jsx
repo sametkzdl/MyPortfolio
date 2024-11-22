@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 6rem;
+  padding-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
@@ -10,7 +10,7 @@ const Wrap = styled.div`
     margin-block: 20px;
   }
   p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -30,9 +30,10 @@ const Company = styled.div`
   background-color: #fff;
   a {
     display: inline-block;
-    height: 100px;
     display: flex;
     align-items: center;
+    width: 100%;
+    aspect-ratio: 2;
     > img {
       max-width: 150px;
       height: auto;
@@ -63,7 +64,7 @@ const References = () => {
     },
   ];
   return (
-    <Wrap>
+    <Wrap id="referencies">
       <h3>Referanslar </h3>
       <p>Hizmet verdiğim kurum ve kuruluşlar ...</p>
       <WrapCompany>

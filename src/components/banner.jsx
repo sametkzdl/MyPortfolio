@@ -53,7 +53,6 @@ export const Mybutton = styled.button`
   transition: all 0.3s;
   &:hover {
     box-shadow: #605b5b 2px 2px 7px;
-    text-shadow: 4px 4px 10px #8d8484;
   }
   &:active {
     transform: translateY(6px);
@@ -65,17 +64,18 @@ export const Mybutton = styled.button`
 
 const Banner = () => {
   return (
-    <Wrap>
+    <Wrap id="banner">
       <WrapDetail>
         <h1>
-          I’m Rayan Adlrdard <span>Front-end</span> Developer
+          Merhaba, ben Abdul Samet Kazdal <span>Front-end (Web Site)</span>{" "}
+          Geliştiricisi
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-          lectus.
+          &nbsp;&nbsp;&nbsp;&nbsp;2022 yılında başladığım İstinye Üniversitesi
+          Yönetim Bilişim Sistemleri (İngilizce) bölümünde üniversite
+          yolculuğuma başladım...
         </p>
-        <Mybutton>İletişime Geç</Mybutton>
+        <Mybutton>Özgeçmiş </Mybutton>
       </WrapDetail>
       <WrapPhoto>
         <img src="/images/myPhoto.jpg" />

@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import Row from "../components/row";
 
-const Header = styled.header`
-  width: 100%;
-  height: 100px;
-  background-color: #eee;
-`;
 const Footer = styled.footer`
   width: 100%;
   padding-top: 20px;
@@ -24,7 +19,6 @@ const Logo = styled.img`
 const MainLayout = ({ children }) => {
   return (
     <div>
-      {/* <Header>Header</Header> */}
       <Row>{children}</Row>
       <Footer>
         <h2>2024 Tüm hakları saklıdır.</h2>

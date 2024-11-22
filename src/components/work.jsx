@@ -3,7 +3,7 @@ import { device } from "../utils/global";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 6rem;
+  padding-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
@@ -11,7 +11,7 @@ const Wrap = styled.div`
     margin-block: 20px;
   }
   p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -107,7 +107,7 @@ const Work = () => {
     },
   ];
   return (
-    <Wrap>
+    <Wrap id="experience">
       <h3>Çalışma ve İş Deneyimlerim </h3>
       <p>
         Başlıklar halinde hayatım boyunca bilgi ,deneyim ve tecrübe kazandığım

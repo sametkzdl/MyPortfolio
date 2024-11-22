@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 6rem;
+  padding-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
@@ -10,7 +10,7 @@ const Wrap = styled.div`
     margin-block: 20px;
   }
   p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -57,7 +57,7 @@ const Services = () => {
     },
   ];
   return (
-    <Wrap>
+    <Wrap id="services">
       <h3>Yardımcı Olabileceğim Yazılımlar </h3>
       <p>
         İstekleriniz doğrultusunda size yardımcı olabileceğim yazılım geliştirme

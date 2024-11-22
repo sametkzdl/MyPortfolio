@@ -3,7 +3,7 @@ import { device } from "../utils/global";
 
 const Wrap = styled.div`
   width: 100%;
-  margin-block: 6rem;
+  padding-block: 6rem;
   text-align: center;
   > h3 {
     font-size: 32px;
@@ -11,7 +11,7 @@ const Wrap = styled.div`
     margin-block: 20px;
   }
   p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -75,45 +75,18 @@ const Card = styled.div`
 const Education = () => {
   const data = [
     {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
+      school: "İstinye Üniversitesi",
+      role: "Öğrenci",
+      date: "Eylül 2022 - ____",
+      title: "Yönetim Bilişim Sistemleri",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    },
-    {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
-      decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    },
-    {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
-      decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    },
-    {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
-      decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
+        "Güncel teknolojinin kullanılması ve geliştirilmesi üzerine faydalandığım kurum. ",
     },
   ];
   return (
-    <Wrap>
+    <Wrap id="education">
       <h3>Eğitim Hayatım </h3>
-      <p>
-        Başlıklar halinde hayatım boyunca bilgi ,deneyim ve tecrübe kazandığım
-        yerler ...
-      </p>
+      <p>Hayatımda eğitim ve bilgi edindiğim kurum ve kuruluşlar...</p>
       <WrapCard>
         {data.map((item, index) => {
           return (
@@ -121,7 +94,7 @@ const Education = () => {
               <div>
                 <h3>{item.school}</h3>
                 <h4>
-                  {item.role}&nbsp;&nbsp;&nbsp;
+                  {item.role}:&nbsp;&nbsp;&nbsp;
                   <span>{item.date}</span>
                 </h4>
               </div>

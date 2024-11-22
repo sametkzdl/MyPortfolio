@@ -4,7 +4,7 @@ import { Mybutton } from "./banner";
 import { theme } from "../utils/global";
 
 const Wrap = styled.div`
-  margin-bottom: 90px;
+  padding-bottom: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -110,7 +110,7 @@ const Contact = () => {
   };
 
   return (
-    <Wrap>
+    <Wrap id="contact">
       <div>
         <h3 style={{ fontSize: "32px" }}>İletişim Formu</h3>
         <WrapForm onSubmit={(e) => handeleSubmit(e)}>
