@@ -8,6 +8,7 @@ import References from "../components/references";
 import Services from "../components/services";
 import Work from "../components/work";
 import { theme } from "../utils/global";
+import Curtain from "../components/curtain";
 
 const Logo = styled.img`
   border-radius: 50%;
@@ -113,6 +114,7 @@ const Home = () => {
 
   return (
     <div ref={wrapRef} style={{ position: "relative" }}>
+      <Curtain />
       <ActiveNavbar>
         {data.map(({ id, title, imgUrl }, index) => {
           return (

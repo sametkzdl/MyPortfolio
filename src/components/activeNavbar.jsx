@@ -8,7 +8,7 @@ const bookends = keyframes`
 
 const Wrap = styled.div`
   position: fixed;
-  right: 2rem;
+  left: 0.5rem;
   top: 0;
   transform: translateY(-100%);
   transition: all 3s;
@@ -24,9 +24,11 @@ const Column = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  box-shadow: rgb(66, 67, 69) 0px 20px 30px -10px;
+  box-shadow: rgb(66, 67, 69) 0px 20px 30px -20px;
   background-color: #fff;
   padding: 2.3rem 1rem;
+  opacity: 0.6;
+  transition: all 0.3s;
   &::after {
     position: absolute;
     content: "";
@@ -36,6 +38,11 @@ const Column = styled.div`
     width: 100%;
     background-color: #fff;
     clip-path: polygon(0 0, 51% 0, 100% 0, 100% 50%, 51% 0, 0% 50%);
+  }
+  &:hover {
+    opacity: 1;
+    box-shadow: rgb(66, 67, 69) 0px 20px 30px -10px,
+      rgb(66, 67, 69) -4px -4px 40px 5px;
   }
 `;
 
