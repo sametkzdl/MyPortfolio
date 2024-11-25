@@ -54,6 +54,7 @@ const NavItem = styled.div`
 const Home = () => {
   const wrapRef = useRef();
   const [activeIndex, setActiveIndex] = useState([]);
+  const [isOpen, setIsOpen] = useState(true);
 
   const data = [
     {
@@ -111,10 +112,11 @@ const Home = () => {
       window.removeEventListener("scroll", checkScrollHeight);
     };
   }, []);
+  console.log(isOpen);
 
   return (
     <div ref={wrapRef} style={{ position: "relative" }}>
-      <Curtain />
+      <Curtain isOpen={isOpen} setIsOpen={setIsOpen} />
       <ActiveNavbar>
         {data.map(({ id, title, imgUrl }, index) => {
           return (
@@ -131,7 +133,7 @@ const Home = () => {
           );
         })}
       </ActiveNavbar>
-      <Banner />
+      <Banner isOpen={isOpen} />
       <References />
       <Services />
       <Education />

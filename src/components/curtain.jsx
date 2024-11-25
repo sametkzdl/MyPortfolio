@@ -1,4 +1,29 @@
-import styled from "styled-components";
+import { useState } from "react";
+import styled, { keyframes } from "styled-components";
+import { device, theme } from "../utils/global";
+
+const RollOpen = keyframes`
+to {
+  transform: none;
+}
+`;
+
+const RollClose = keyframes`
+from {
+  transform: translateY(0%);
+}
+to {
+  transform: translateY(-95%);
+}
+`;
+
+const Shake = keyframes`
+  0%,100% {
+    transform: translateY(-4px);
+  } 70% {
+    transform: translateY(4px);
+  }
+`;
 
 const Wrap = styled.div`
   position: absolute;
@@ -12,12 +37,14 @@ const Wrap = styled.div`
   background-color: #fff;
   z-index: 5;
   text-align: center;
-  transition: all 0.3s;
-  > div {
-    padding-block: 20px;
-  }
+  transform: translateY(-100%);
+  animation: ${({ $click }) => ($click ? RollOpen : RollClose)} 3s forwards;
   > div:not(:last-child) {
     border-bottom: 2px solid #f0f0f6;
+    padding-block: 20px;
+  }
+  @media ${device.tablet} {
+    display: none;
   }
 `;
 
@@ -51,7 +78,34 @@ const ProgressBar = styled.div`
   }
 `;
 
-const Curtain = () => {
+const Arrow = styled.div`
+  cursor: pointer;
+  transform: translateY(50%);
+  background-color: ${theme.primary};
+  height: ${({ $click }) => ($click ? "70px" : "60px")};
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  clip-path: ${({ $click }) =>
+    $click
+      ? "polygon(0 0, 100% 0, 100% 100%, 50% 65%, 0 100%)"
+      : "polygon(0 0, 100% 0, 100% 50%, 51% 100%, 0 50%)"};
+  img {
+    transition: all 0.5s;
+    animation-name: ${Shake};
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  &:hover {
+    img {
+      scale: 1.1;
+      filter: drop-shadow(3px 3px 1rem #7378d2);
+    }
+  }
+`;
+
+const Curtain = ({ isOpen, setIsOpen }) => {
   const profileInfo = [
     { title: "Yaş", value: 22 },
     { title: "Şehir", value: "İstanbul" },
@@ -76,7 +130,7 @@ const Curtain = () => {
     ],
   };
   return (
-    <Wrap>
+    <Wrap $click={isOpen}>
       <div>
         <WrapProfilePhoto>
           <img src={"images/myPhoto.jpg"} />
@@ -175,6 +229,25 @@ const Curtain = () => {
           );
         })}
       </div>
+      <Arrow onClick={() => setIsOpen(!isOpen)} $click={isOpen}>
+        {isOpen ? (
+          <img
+            $click={isOpen}
+            width={50}
+            height={50}
+            alt="arrow-icon"
+            src="icons/up-arrow.svg"
+          />
+        ) : (
+          <img
+            $click={isOpen}
+            width={50}
+            height={50}
+            alt="arrow-icon"
+            src="icons/down-arrow.svg"
+          />
+        )}
+      </Arrow>
     </Wrap>
   );
 };

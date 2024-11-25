@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { device } from "../utils/global";
 
 const bookends = keyframes`
     to {
@@ -16,6 +17,10 @@ const Wrap = styled.div`
   animation-duration: 2s;
   animation-fill-mode: forwards;
   z-index: 3;
+  @media ${device.tablet} {
+    left: unset;
+    right: 0.5rem;
+  }
 `;
 
 const Column = styled.div`

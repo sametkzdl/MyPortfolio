@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { device, theme } from "../utils/global";
+
+const getPhoto = keyframes`
+   to {
+    transform: none;
+    opacity: 1;
+  }
+`;
 
 const Wrap = styled.div`
   display: flex;
@@ -29,12 +36,17 @@ const WrapDetail = styled.div`
 
 const WrapPhoto = styled.div`
   margin: auto;
-  > img {
+  img {
     border-radius: 50%;
     width: 20rem;
     aspect-ratio: 15/16;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 6px, rgba(0, 0, 0, 0.4) -3px -3px 6px;
+    animation-name: ${getPhoto};
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(-100%);
   }
   @media ${device.tablet} {
     order: 1;
@@ -62,7 +74,7 @@ export const Mybutton = styled.button`
   }
 `;
 
-const Banner = () => {
+const Banner = ({ isOpen }) => {
   return (
     <Wrap id="banner">
       <WrapDetail>
@@ -78,7 +90,12 @@ const Banner = () => {
         <Mybutton>Özgeçmiş </Mybutton>
       </WrapDetail>
       <WrapPhoto>
-        <img src="/images/myPhoto.jpg" />
+        <div>
+          <img
+            $isOpen={isOpen}
+            src={isOpen ? "/images/bgProfilePhoto.jpg" : "/images/myPhoto.jpg"}
+          />
+        </div>
       </WrapPhoto>
     </Wrap>
   );
