@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { device, theme } from "../utils/global";
+import { useNavigate } from "react-router-dom";
 
 const getPhoto = keyframes`
    to {
@@ -75,6 +76,7 @@ export const Mybutton = styled.button`
 `;
 
 const Banner = ({ isOpen }) => {
+  const navigate = useNavigate();
   return (
     <Wrap id="banner">
       <WrapDetail>
@@ -87,7 +89,7 @@ const Banner = ({ isOpen }) => {
           Yönetim Bilişim Sistemleri (İngilizce) bölümünde üniversite
           yolculuğuma başladım...
         </p>
-        <Mybutton>Özgeçmiş </Mybutton>
+        <Mybutton onClick={() => navigate("/cv")}>Özgeçmiş </Mybutton>
       </WrapDetail>
       <WrapPhoto>
         <div>
