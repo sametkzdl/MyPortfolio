@@ -1,0 +1,200 @@
+[
+  {
+    "id": 14,
+    "name": "Su Toptancısı Web Sitesi Arayüzü",
+    "technologies": [
+      "GitHub",
+      "Figma",
+      "HTML",
+      "CSS",
+      "React",
+      "Styled-Components",
+      "JavaScript",
+      "React-router-dom"
+    ],
+    "date": "Temmuz 2024",
+    "description": "Bu projede React frameworku kullanarak bir su toptancısının e ticaret için gerekli ön yüzünü koda döktüm.",
+    "images": [
+      "project15/image1.png",
+      "project15/image2.png",
+      "project15/image3.png",
+      "project15/image4.png",
+      "project15/image5.png",
+      "project15/image6.png",
+      "project15/image7.png"
+    ],
+    "category": "React Uygulaması",
+    "gitHubLink": "https://github.com/sametkzdl/developerClient",
+    "link": ""
+  },
+  {
+    "id": 12,
+    "name": "Yetim Vakfı İletişim Sayfası Tasarımı",
+    "technologies": [
+      "GitHub",
+      "Figma",
+      "HTML",
+      "CSS",
+      "React",
+      "Styled-Components",
+      "JavaScript"
+    ],
+    "date": "Şubat 2024",
+    "description": "Bu projede React frameworku kullanarak Yetim Vakfı kurumunun iletişim sayfasını koda döktüm.",
+    "images": ["project13/image1.png"],
+    "category": "React Uygulaması",
+    "gitHubLink": "https://github.com/sametkzdl/yetim-vakf--denem",
+    "link": ""
+  },
+  {
+    "id": 13,
+    "name": "Alışveriş Sepeti Uygulaması",
+    "technologies": [
+      "GitHub",
+      "Figma",
+      "HTML",
+      "CSS",
+      "React",
+      "Styled-Components",
+      "JavaScript"
+    ],
+    "date": "Şubat 2024",
+    "description": "Bu projede React frameworku kullanarak alışveriş sitesi sepetini koda döktüm.",
+    "images": ["project14/image1.png"],
+    "category": "React Uygulaması",
+    "gitHubLink": "https://github.com/sametkzdl/basketapp",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "name": "VPN Web Site Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project7/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 0,
+    "name": "İletişim Web Sitesi Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Kasım 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project1/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "name": "Oyun Platformu Web Sitesi",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Aralık 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project5/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 10,
+    "name": "Sanat Web Sitesi Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project11/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 11,
+    "name": "Şehir Tanıtım Web Site Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project12/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 2,
+    "name": "Danışmanlık Web Sitesi",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Kasım 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project3/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "name": "Web Site Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Aralık 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project4/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "name": "Web Site Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project6/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 1,
+    "name": "Kullanıcı Card Componenti",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Kasım 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project2/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 8,
+    "name": "İletişim Web Sitesi Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project9/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 7,
+    "name": "Google Ana Sayfa Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project8/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  },
+  {
+    "id": 9,
+    "name": "Sonuç Componenti Tasarımı",
+    "technologies": ["GitHub", "Figma", "HTML", "CSS"],
+    "date": "Ekim 2023",
+    "description": "Bu projede CSS ve HTML kullanarak figma tasarım uygulaması ile şablonu koda döktüm.",
+    "images": ["project10/image1.png"],
+    "category": "CSS Template",
+    "gitHubLink": "",
+    "link": ""
+  }
+]

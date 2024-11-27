@@ -23,7 +23,7 @@ const MainLayout = ({ children }) => {
       <Footer>
         <h2>2024 Tüm hakları saklıdır.</h2>
         <div>
-          <Logo src="icons/myLogo.svg" alt="my-logo" />
+          <Logo src="/public/icons/myLogo.svg" alt="my-logo" />
         </div>
       </Footer>
     </div>

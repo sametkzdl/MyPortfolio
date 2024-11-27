@@ -9,6 +9,7 @@ import Services from "../components/services";
 import Work from "../components/work";
 import { theme } from "../utils/global";
 import Curtain from "../components/curtain";
+import Apps from "../components/apps";
 
 const Logo = styled.img`
   border-radius: 50%;
@@ -83,6 +84,11 @@ const Home = () => {
       imgUrl: "icons/work.svg",
     },
     {
+      id: "apps",
+      title: "Projeler",
+      imgUrl: "icons/apps.svg",
+    },
+    {
       id: "contact",
       title: "İletişim",
       imgUrl: "icons/contact.svg",
@@ -112,7 +118,6 @@ const Home = () => {
       window.removeEventListener("scroll", checkScrollHeight);
     };
   }, []);
-  console.log(isOpen);
 
   return (
     <div ref={wrapRef} style={{ position: "relative" }}>
@@ -138,6 +143,7 @@ const Home = () => {
       <Services />
       <Education />
       <Work />
+      <Apps />
       <Contact />
     </div>
   );

@@ -74,36 +74,20 @@ const Card = styled.div`
 const Work = () => {
   const data = [
     {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
+      school: "OKBA Turizm",
+      role: "Tercüman",
+      date: "Haziran 2022 - Eylül 2022  /Haziran 2023 - Eylül 2023  ",
+      title: "Tercüman Tur Rehberi",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
+        "Memeleketimde bulunduğum yaz aylarında turizm sektöründe Arapça ve İngilizce tercümanlık yaptım.",
     },
     {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
+      school: "SistemPlus Yazılım Şirketi",
+      role: "Yazılımcı",
+      date: "Aralık 2023 -----",
+      title: "Front-end (Website) Geliştiricisi",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    },
-    {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
-      decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    },
-    {
-      school: "University of Toronto",
-      role: "Student",
-      date: "Haziran 2016 - Eylül 2018",
-      title: "Certificate of web training",
-      decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
+        "Üniversitede hazırlık sınıfımı tamamladıktan sonra profesyonel bir firmada kendimi geliştirmek ve içerik üretmek için başlayıp ve devam etmekte olduğum kurum. STK ların form, bağış ödemeleri ve diğer ihtiyaç duyulan geliştirmeleri yaparak kendimi geliştirmeye devam etmekteyim.",
     },
   ];
   return (
