@@ -2,6 +2,11 @@ import { useParams } from "react-router-dom";
 import { device } from "../utils/global.js";
 import styled from "styled-components";
 import projects from "../locale/projects.json";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Wrap = styled.div`
   width: 100%;
@@ -62,35 +67,17 @@ const Card = styled.div`
     border-bottom: 1px solid #ccc;
     padding-bottom: 1.5rem;
   }
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
+    flex-direction: column;
+    justify-content: center;
     > div {
-      text-align: left;
-      &:first-child {
-        width: auto;
-      }
-
-      &:last-child {
-        width: auto;
-      }
+      width: 100% !important;
     }
   }
 `;
 
 const WrapImages = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 500px;
-  img {
-    width: 100%;
-    height: auto;
-    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4), -1px -1px 5px rgb(0, 0, 0, 0.4);
-  }
-
-  video {
-    width: 100%;
-    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4), -1px -1px 5px rgb(0, 0, 0, 0.4);
-  }
+  width: 100%;
 `;
 
 const SingleProduct = () => {
@@ -126,9 +113,30 @@ const SingleProduct = () => {
             <p>{desiredProject.description}</p>
             <WrapImages>
               <h3>Fotoğraflar</h3>
-              {desiredProject.images.map((item, i) => {
-                return <img src={`/public/${item}`} key={i} />;
-              })}
+              <Swiper
+                modules={[Pagination]}
+                spaceBetween={50}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                style={{
+                  width: "80%",
+                  boxShadow:
+                    "3px 3px 6px rgba(0,0,0,.4), -3px -3px 6px rgba(0,0,0,.4)",
+                  padding: "10px",
+                }}
+              >
+                {desiredProject.images.map((item, i) => {
+                  return (
+                    <SwiperSlide>
+                      <img
+                        style={{ width: "100%", aspectRatio: "auto" }}
+                        src={`/public/${item}`}
+                        key={i}
+                      />
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
             </WrapImages>
           </div>
         </Card>
