@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import styled from "styled-components";
 import { Mybutton } from "./banner";
 import { theme } from "../utils/global";
+// import { emailjs } from "emailjs";
 
 const Wrap = styled.div`
   padding-bottom: 90px;
@@ -101,12 +102,52 @@ const Contact = () => {
       ],
     },
   ];
+  const [isSubmitted, setIsSubmitted] = useState({});
 
-  const handeleSubmit = (e) => {
+  const handeleSubmit = async (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
-    const inputValues = Object.fromEntries(data);
-    console.log(inputValues);
+
+    const data = {
+      service_id: "service_nwe2j2c",
+      template_id: "template_j79j2rd",
+      user_id: "19dU9TtVr_VD_5nF5",
+      template_params: Object.fromEntries(new FormData(e.target)),
+    };
+
+    try {
+      const response = await fetch(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      if (response.ok) {
+        setIsSubmitted({
+          show: true,
+          msg: "Mesaj Gönderme Başarılı",
+          status: "#03fc52",
+        });
+        setTimeout(() => {
+          setIsSubmitted({});
+        }, 1500);
+      } else {
+        setIsSubmitted({
+          show: true,
+          msg: "Mesaj Gönderme Başarısız",
+          status: "#fc0328",
+        });
+        setTimeout(() => {
+          setIsSubmitted({});
+        }, 1500);
+      }
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
@@ -137,8 +178,14 @@ const Contact = () => {
             name="message"
             required={true}
           />
-          <Mybutton style={{ marginTop: "20px" }} type="submit">
-            Mesaj Gönder
+          <Mybutton
+            style={{
+              marginTop: "20px",
+              backgroundColor: isSubmitted.status && isSubmitted.status,
+            }}
+            type="submit"
+          >
+            {isSubmitted.show ? isSubmitted.msg : "Mesaj Gönder"}
           </Mybutton>
         </WrapForm>
       </div>
