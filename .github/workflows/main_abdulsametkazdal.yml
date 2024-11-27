@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist
-          path: ./dist/dist.zip 
+          path: ./dist/dist.zip
 
   deploy:
     runs-on: ubuntu-latest
