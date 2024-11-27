@@ -28,14 +28,13 @@ jobs:
 
       - name: Prepare dist folder for deployment
         run: |
-          cd dist
-          zip -r dist.zip .
+          zip -r dist.zip ./dist
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
           name: dist
-          path: ./dist/dist.zip
+          path: ./dist.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,7 +50,7 @@ jobs:
           name: dist
 
       - name: Unzip artifact for deployment
-        run: unzip dist.zip -d .
+        run: unzip dist.zip
 
       - name: "Deploy to Azure Web App"
         id: deploy-to-webapp
@@ -60,4 +59,4 @@ jobs:
           app-name: "abdulsametkazdal"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_152B8FD792A141A1B4E01CD15CC1AC1F }}
-          package: .
+          package: ./dist
