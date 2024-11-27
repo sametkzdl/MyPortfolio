@@ -55,7 +55,7 @@ const NavItem = styled.div`
 const Home = () => {
   const wrapRef = useRef();
   const [activeIndex, setActiveIndex] = useState([]);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(window.innerWidth > 768 ? true : false);
 
   const data = [
     {

@@ -120,7 +120,7 @@ const Curtain = ({ isOpen, setIsOpen }) => {
     skills: [
       { title: "HTML", value: 60 },
       { title: "CSS", value: 60 },
-      { title: "JS", value: 55 },
+      { title: "JS", value: 40 },
       { title: "React", value: 50 },
     ],
     extraSkisls: [

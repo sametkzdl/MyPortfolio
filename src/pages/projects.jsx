@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ProjectCard } from "../components/apps";
 import { useNavigate } from "react-router-dom";
 import projects from "../locale/projects.json";
+import Crumbs from "../components/bradCrumbs";
 
 const WrapContent = styled.div`
   display: flex;
@@ -35,6 +36,7 @@ const Projects = () => {
           kullanılan teknolojiler ve detayları ile beraber sıralanmaktadır.
         </p>
       </Head>
+      <Crumbs />
       <WrapContent>
         {projects.map((item, index) => {
           return (

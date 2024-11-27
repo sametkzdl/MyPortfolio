@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../utils/global";
+import Crumbs from "../components/bradCrumbs";
 const Head = styled.div`
   text-align: center;
   padding: 3rem 0rem;
@@ -117,6 +118,7 @@ bilerek çok sayıda firmaya başvurmaya çalıştım ve <strong>SistemPlus</str
       <Head>
         <h2>Özgeçmiş</h2>
       </Head>
+      <Crumbs />
       <WrapCard>
         {data.map((item, index) => {
           return (

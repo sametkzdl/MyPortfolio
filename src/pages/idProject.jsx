@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Crumbs from "../components/bradCrumbs.jsx";
 
 const Wrap = styled.div`
   width: 100%;
@@ -89,6 +90,7 @@ const SingleProduct = () => {
       <Head>
         <h3>Proje Detayı</h3>
       </Head>
+      <Crumbs />
       <WrapCard>
         <Card>
           <div>
