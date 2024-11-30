@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import MainLayout from "./layout/main.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/MyPortfolio">
     <MainLayout>
       <App />
     </MainLayout>
