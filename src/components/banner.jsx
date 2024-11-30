@@ -12,11 +12,12 @@ const getPhoto = keyframes`
 const Wrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem;
+  padding: 4rem 6rem;
   background-color: #fff;
   @media ${device.tablet} {
     flex-direction: column;
     gap: 30px;
+    padding: 4rem;
   }
 `;
 
