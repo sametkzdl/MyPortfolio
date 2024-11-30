@@ -96,7 +96,7 @@ const Banner = ({ isOpen }) => {
         <div>
           <img
             $isOpen={isOpen}
-            src={isOpen ? "/images/bgProfilePhoto.jpg" : "/images/myPhoto.jpg"}
+            src={isOpen ? "images/bgProfilePhoto.jpg" : "images/myPhoto.jpg"}
           />
         </div>
       </WrapPhoto>

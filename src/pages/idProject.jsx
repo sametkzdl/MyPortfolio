@@ -132,7 +132,7 @@ const SingleProduct = () => {
                     <SwiperSlide>
                       <img
                         style={{ width: "100%", aspectRatio: "auto" }}
-                        src={`/public/${item}`}
+                        src={`${item}`}
                         key={i}
                       />
                     </SwiperSlide>
