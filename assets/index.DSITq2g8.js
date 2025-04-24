@@ -106,8 +106,8 @@ Error generating stack: `+l.message+`
   }
   &:hover {
     opacity: 1;
-    box-shadow: rgb(66, 67, 69) 0px 20px 30px -10px,
-      rgb(66, 67, 69) -4px -4px 40px 5px;
+    box-shadow: rgb(66, 67, 69, 0.3) 5px 5px 10px,
+      rgb(66, 67, 69, 0.4) -5px -5px 10px;
   }
 `,P0=({children:e})=>y.jsx(C0,{children:y.jsx(T0,{children:e})}),j0=oi`
    to {
