@@ -118,6 +118,12 @@ const Home = () => {
       window.removeEventListener("scroll", checkScrollHeight);
     };
   }, []);
+  const handleScrollToContact = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div ref={wrapRef} style={{ position: "relative" }}>
@@ -126,7 +132,7 @@ const Home = () => {
         {data.map(({ id, title, imgUrl }, index) => {
           return (
             <NavItem $title={title} key={index}>
-              <a href={`#${id}`}>
+              <a onClick={(e) => handleScrollToContact(id)}>
                 <Logo
                   src={imgUrl}
                   width={20}
