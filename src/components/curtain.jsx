@@ -114,18 +114,21 @@ const Curtain = ({ isOpen, setIsOpen }) => {
 
   const values = {
     languages: [
-      { title: "İngilizce", value: 60 },
-      { title: "Arapça", value: 35 },
+      { title: "İngilizce", value: 70 },
+      { title: "Arapça", value: 40 },
     ],
     skills: [
-      { title: "HTML", value: 60 },
-      { title: "CSS", value: 60 },
-      { title: "JS", value: 40 },
-      { title: "React", value: 50 },
+      { title: "HTML", value: 75 },
+      { title: "CSS", value: 70 },
+      { title: "JS", value: 60 },
+      { title: "React", value: 75 },
+      { title: "Next", value: 70 },
     ],
     extraSkisls: [
       { title: "GitHub" },
       { title: "Styled Components" },
+      { title: "React Hook Form" },
+      { title: "Zustand" },
       { title: "Figma" },
     ],
   };
