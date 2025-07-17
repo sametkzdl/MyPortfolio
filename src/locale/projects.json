@@ -1,5 +1,31 @@
 [
   {
+    "id": 15,
+    "name": "Altuğ Sanat Web Sitesi",
+    "technologies": [
+      "GitHub",
+      "Figma",
+      "HTML",
+      "CSS",
+      "React",
+      "Styled-Components",
+      "JavaScript",
+      "Next.js",
+      "Google Sheet"
+    ],
+    "date": "Ağustos 2024",
+    "description": "Bu projede Next.js kullanarak bir sant hocasının başvuru alıp kendi ürünlerinide sergileyebileceği bir site geliştirdim.",
+    "images": [
+      "project16/image1.png",
+      "project16/image2.png",
+      "project16/image3.png",
+      "project16/image4.png"
+    ],
+    "category": "Next Uygulaması",
+    "gitHubLink": "https://github.com/sametkzdl/artWebSite",
+    "link": ""
+  },
+  {
     "id": 14,
     "name": "Su Toptancısı Web Sitesi Arayüzü",
     "technologies": [
