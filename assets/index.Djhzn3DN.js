@@ -651,21 +651,12 @@ to {
       }
     }
   }
-`,gy=()=>{const e=[{school:"Hakkında",role:"",date:"  ",title:"",decription:`	<p>&nbsp;&nbsp;&nbsp;2002 yılında Rize de doğdum. İlkokul ve ortaokul eğitimimi Trabzon da
-aldım. Lise eğitimime Proje İmam Hatip te başladım ve ilk yılında Arapça dil eğitimi aldım.</p> 
-<p>&nbsp;&nbsp;&nbsp;Corana Virus zamanında açık (düz) liseye geçerek YKS sınavına bireysel çalışarak 29.000 eşit ağırlık sıralaması ile İstinye
-Üniversitesinde (İngilizce) Yönetim Bilişim Sistemleri bölümünü tam
-burslu olarak kazandım.</p> 
-	<p>&nbsp;&nbsp;&nbsp;Üniversiteye gelene kadar Arapça dilim ile
-kendi bölgemde (Trabzon ve Rize) gayri resmi olarak tercümanlık
-yaptım. </p>
-	<p>&nbsp;&nbsp;&nbsp;Üniversitenin ilk yılında İngilizce dil eğitimi aldım ve eğitimim
-100% İngilizce olarak devam etmektedir.</p> 
-<p>&nbsp;&nbsp;&nbsp;
-2023-2024 eğitim yılında kendi
-bilgim ve etrafımdakilerin tavsiyeleri ile iş işte öğrenilmesi gerektiğini
-bilerek çok sayıda firmaya başvurmaya çalıştım ve <strong>SistemPlus</strong> firmasında yazılım serüvenime faal olarak başladım ve devam etmekteyim.... 
-	</p>
+`,gy=()=>{const e=[{school:"Hakkında",role:"",date:"  ",title:"",decription:`	<p>&nbsp;&nbsp;&nbsp;2002 yılında Rize'de doğdum. İlkokul ve ortaokul eğitimimi Trabzon'da tamamladım. Lise eğitimime Proje İmam Hatip'te başladım ve bu dönemde Arapça dil eğitimi alarak dil becerilerimi geliştirdim.</p>
+<p>&nbsp;&nbsp;&nbsp;COVID-19 pandemisi sürecinde açık liseye geçiş yaparak, Yükseköğretim Kurumları Sınavı'na (YKS) bireysel olarak hazırlandım ve eşit ağırlık dilimnde elde ettiğim netice ile İstinye Üniversitesi'nde Yönetim Bilişim Sistemleri bölümüne, %100 burslu olarak kabul edildim.</p>
+<p>&nbsp;&nbsp;&nbsp;Üniversiteye başlamadan önce, Arapça dil becerim ile Trabzon ve Rize illerinde gayri resmi olarak tercümanlık hizmeti verdim, böylece dil ve iletişim becerilerimi pratikte pekiştirdim.</p>
+<p>&nbsp;&nbsp;&nbsp;Üniversitenin ilk yılında, İngilizce dil eğitimimi tamamladım ve halen eğitimime devam etmekteyim.</p>
+<p>&nbsp;&nbsp;&nbsp;2023-2024 eğitim yılı itibariyle, iş dünyasında yetkinlik kazanmanın ancak pratik deneyimle mümkün olduğunu bilerek, çevremdeki önerilerle birçok firmaya başvuru yaptım. Bu süreçte, <strong>SistemPlus</strong> firmasında yazılım geliştirme alanındaki kariyerime aktif olarak adım attım ve bu alandaki yolculuğuma devam etmekteyim.</p>
+
 `},{school:"Eğitim",role:"İstanbul",date:"Ekim 2022 -----",title:"",decription:"<h2>İstinye Üniversitesi Yönetim Bilişim Sistemleri (İngilizce)</h2>"},{school:"Dil",role:"",date:"",title:"",decription:"<ul><li>Arapça</li><li>İnglizce</li></ul>"},{school:"Hobiler",role:"",date:"",title:"",decription:"<ul><li>Yüzme</li><li>Fitness</li><li>Kitap Okuma</li></ul>"}];return y.jsxs(y.Fragment,{children:[y.jsx(py,{children:y.jsx("h2",{children:"Özgeçmiş"})}),y.jsx(es,{}),y.jsx(my,{children:e.map((t,n)=>y.jsxs(hy,{children:[y.jsxs("div",{children:[y.jsx("h2",{children:t.school}),t.role!==""&&y.jsxs("h4",{children:[t.role,"   ",y.jsx("span",{children:t.date})]})]}),y.jsxs("div",{children:[y.jsx("h2",{style:{fontSize:"24px"},children:t.title}),y.jsx("div",{dangerouslySetInnerHTML:{__html:t.decription}})]})]},n))})]})},vy=R.div`
   padding: 3rem 0rem;
   > h3 {
