@@ -768,4 +768,4 @@ bilerek çok sayıda firmaya başvurmaya çalıştım ve <strong>SistemPlus</str
 `,aw=R.img`
   aspect-ratio: 2;
   width: 200px;
-`,uw=({children:e})=>y.jsxs("div",{children:[y.jsx(sw,{children:e}),y.jsxs(ow,{children:[y.jsx("h2",{children:"2024 Tüm hakları saklıdır."}),y.jsx("div",{children:y.jsx(aw,{src:"icons/myLogo.svg",alt:"my-logo"})})]})]});ep(document.getElementById("root")).render(y.jsx(Ev,{basename:"/MyPortfolio",children:y.jsx(uw,{children:y.jsx(iw,{})})}));
+`,uw=({children:e})=>y.jsxs("div",{children:[y.jsx(sw,{children:e}),y.jsxs(ow,{children:[y.jsx("h2",{children:"2024 Tüm hakları saklıdır."}),y.jsx("div",{children:y.jsx(aw,{src:"icons/myLogo.svg",alt:"my-logo"})})]})]});ep(document.getElementById("root")).render(y.jsx(Ev,{children:y.jsx(uw,{children:y.jsx(iw,{})})}));
