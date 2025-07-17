@@ -5,7 +5,7 @@ import { HashRouter } from "react-router-dom";
 import MainLayout from "./layout/main.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <HashRouter basename="/MyPortfolio">
+  <HashRouter>
     <MainLayout>
       <App />
     </MainLayout>
