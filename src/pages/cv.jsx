@@ -69,7 +69,7 @@ const Card = styled.div`
 const CV = () => {
   const data = [
     {
-      school: "Hakkında",
+      school: "Hakkımda",
       role: "",
       date: "  ",
       title: "",

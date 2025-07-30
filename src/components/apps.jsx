@@ -70,7 +70,9 @@ const Apps = () => {
           return (
             <ProjectCard
               key={index}
-              onClick={() => navigate(`/projects/${index}`)}
+              onClick={() => {
+                navigate(`/projects/${index}`), window.scrollTo(0, 0);
+              }}
             >
               <img src={item.images[0]} />
               <div>
@@ -88,7 +90,13 @@ const Apps = () => {
           );
         })}
       </WrapCard>
-      <Mybutton onClick={() => navigate("/projects")}>Tüm Projeler</Mybutton>
+      <Mybutton
+        onClick={() => {
+          navigate(`/projects`), window.scrollTo(0, 0);
+        }}
+      >
+        Tüm Projeler
+      </Mybutton>
     </Wrap>
   );
 };

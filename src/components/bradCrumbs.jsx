@@ -22,15 +22,25 @@ const Crumbs = () => {
   return (
     <Wrap>
       <Crumb onClick={() => navigate("/")}>Ana sayfa</Crumb>&nbsp;&nbsp;&nbsp;
-      {data.map(
-        (item, i) =>
-          item.href === location.pathname.slice(1) && (
+      {data.map((item, i) => {
+        if (item.href === location.pathname.split("/")[1]) {
+          return (
             <div key={i}>
               &nbsp;/&nbsp;&nbsp;&nbsp;
-              <Crumb $active={true}>{item.title}</Crumb>
+              <Crumb
+                $active={true}
+                onClick={() =>
+                  location.pathname.split("/")[2] && navigate(`/${item.href}`)
+                }
+              >
+                {item.title}
+                {location.pathname.split("/")[2] &&
+                  "   /   " + location.pathname.split("/")[2]}
+              </Crumb>
             </div>
-          )
-      )}
+          );
+        }
+      })}
     </Wrap>
   );
 };

@@ -42,7 +42,9 @@ const Projects = () => {
           return (
             <ProjectCard
               key={index}
-              onClick={() => navigate(`/projects/${index}`)}
+              onClick={() => {
+                navigate(`/projects/${index}`), window.scrollTo(0, 0);
+              }}
             >
               <img src={item.images[0]} />
               <div>

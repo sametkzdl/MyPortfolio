@@ -30,6 +30,10 @@ const WrapDetail = styled.div`
       color: ${theme.primary};
     }
   }
+  animation-name: ${getPhoto};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   @media ${device.tablet} {
     width: 100%;
     order: 2;
@@ -45,7 +49,7 @@ const WrapPhoto = styled.div`
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 6px, rgba(0, 0, 0, 0.4) -3px -3px 6px;
     animation-name: ${getPhoto};
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
     transform: translateY(-100%);

@@ -50,6 +50,9 @@ const NavItem = styled.div`
     font-size: 12px;
     text-align: center;
   }
+  a {
+    cursor: pointer;
+  }
 `;
 
 const Home = () => {
