@@ -91,16 +91,6 @@ const Contact = () => {
         },
       ],
     },
-    {
-      titleSrc: "icons/mobile.svg",
-      subTitles: [
-        {
-          title: "Telefon",
-          value: "+90 0553 103 7293",
-          href: "tel:+9005531037293",
-        },
-      ],
-    },
   ];
   const [isSubmitted, setIsSubmitted] = useState({});
 
