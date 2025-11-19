@@ -9,6 +9,22 @@ const Head = styled.div`
   }
 `;
 
+const DownloadLink = styled.a`
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #ffb400;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #e6a200;
+    transform: translateY(-2px);
+  }
+`;
+
 const WrapCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -108,6 +124,12 @@ const CV = () => {
     <>
       <Head>
         <h2>Özgeçmiş</h2>
+        <DownloadLink
+          href="/cv/cv_abdulsametkazdal.pdf"
+          download="cv_abdulsametkazdal.pdf"
+        >
+          CV İndir
+        </DownloadLink>
       </Head>
       <Crumbs />
       <WrapCard>
