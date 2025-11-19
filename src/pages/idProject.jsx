@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { device } from "../utils/global.js";
 import styled from "styled-components";
 import projects from "../locale/projects.json";
@@ -81,9 +82,72 @@ const WrapImages = styled.div`
   width: 100%;
 `;
 
+const StyledSwiper = styled(Swiper)`
+  width: 80%;
+  height: 520px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+
+  @media ${device.tablet} {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media ${device.mobileL} {
+    height: 300px;
+    padding: 5px;
+  }
+
+  @media ${device.mobileM} {
+    height: 250px;
+  }
+`;
+
+const StyledSwiperSlide = styled(SwiperSlide)`
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media ${device.tablet} {
+    height: 380px;
+  }
+
+  @media ${device.mobileL} {
+    height: 280px;
+  }
+
+  @media ${device.mobileM} {
+    height: 230px;
+  }
+`;
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`;
+
 const SingleProduct = () => {
   const params = useParams();
   const desiredProject = projects[params.id];
+  const [spaceBetween, setSpaceBetween] = useState(50);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 425) {
+        setSpaceBetween(20);
+      } else if (window.innerWidth <= 768) {
+        setSpaceBetween(30);
+      } else {
+        setSpaceBetween(50);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Wrap>
@@ -115,30 +179,23 @@ const SingleProduct = () => {
             <p>{desiredProject.description}</p>
             <WrapImages>
               <h3>Fotoğraflar</h3>
-              <Swiper
+              <StyledSwiper
                 modules={[Pagination]}
-                spaceBetween={50}
+                spaceBetween={spaceBetween}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                style={{
-                  width: "80%",
-                  boxShadow:
-                    "3px 3px 6px rgba(0,0,0,.4), -3px -3px 6px rgba(0,0,0,.4)",
-                  padding: "10px",
-                }}
               >
                 {desiredProject.images.map((item, i) => {
                   return (
-                    <SwiperSlide>
-                      <img
-                        style={{ width: "100%", aspectRatio: "auto" }}
+                    <StyledSwiperSlide key={i}>
+                      <StyledImage
                         src={`${item}`}
-                        key={i}
+                        alt={`Proje görseli ${i + 1}`}
                       />
-                    </SwiperSlide>
+                    </StyledSwiperSlide>
                   );
                 })}
-              </Swiper>
+              </StyledSwiper>
             </WrapImages>
           </div>
         </Card>
