@@ -125,7 +125,7 @@ const CV = () => {
       <Head>
         <h2>Özgeçmiş</h2>
         <DownloadLink
-          href="/cv/cv_abdulsametkazdal.pdf"
+          href={`${import.meta.env.BASE_URL}cv/cv_abdulsametkazdal.pdf`}
           download="cv_abdulsametkazdal.pdf"
         >
           CV İndir
