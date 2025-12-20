@@ -53,6 +53,11 @@ const References = () => {
       href: "https://sistem.plus/",
     },
     {
+      imgSrc: "icons/fgv.jpg",
+      name: "Fatih Gençlik Vakfı Burs Başvuru Paneli",
+      href: "https://basvuru.fgv.org.tr/",
+    },
+    {
       imgSrc: "icons/hanımeli.png",
       name: "Hanımeli Yemek Hizmetleri Şirketi",
       href: "https://hanimeliportal.com/en/login",
