@@ -62,11 +62,6 @@ const References = () => {
       name: "Hanımeli Yemek Hizmetleri Şirketi",
       href: "https://hanimeliportal.com/en/login",
     },
-    {
-      imgSrc: "icons/xAkademi.png",
-      name: "X Akademi Koçluk Eğitim Platformu",
-      href: "https://sametkzdl.github.io/CoachWebSite/",
-    },
   ];
   return (
     <Wrap id="referencies">
