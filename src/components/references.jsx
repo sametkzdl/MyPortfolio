@@ -56,7 +56,7 @@ const References = () => {
     },
     {
       imgSrc: "icons/basvuran_logo.png",
-      name: "Başvuran Yapay Zeka Destekli Form Denetleme Yazılımı",
+      name: "Başvuran Yapay Zeka Destekli Form Yazılımı",
       href: "https://basvuran.com/",
     },
     {
