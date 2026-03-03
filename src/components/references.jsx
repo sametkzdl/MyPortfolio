@@ -26,17 +26,19 @@ const Company = styled.div`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 1.5rem;
   text-align: center;
-  width: min-content;
+  min-width: 100px;
+  max-width: 200px;
   background-color: #fff;
   a {
     display: inline-block;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     aspect-ratio: 2;
     > img {
       max-width: 150px;
-      height: auto;
+      max-height: 100px;
     }
   }
   h4 {
@@ -51,6 +53,11 @@ const References = () => {
       imgSrc: "icons/sistemPlus.png",
       name: "Sistem Plus Yazılım Bilgi Teknolojileri San. ve Tic. A.Ş.",
       href: "https://sistem.plus/",
+    },
+    {
+      imgSrc: "icons/basvuran_logo.png",
+      name: "Başvuran Yapay Zeka Destekli Form Denetleme Yazılımı",
+      href: "https://basvuran.com/",
     },
     {
       imgSrc: "icons/fgv.jpg",
@@ -71,7 +78,7 @@ const References = () => {
         {data.map((item, id) => {
           return (
             <Company key={id}>
-              <a href={item.href}>
+              <a href={item.href} target="_blank">
                 <img alt={item.imgSrc} src={item.imgSrc} />
               </a>
               <h4>{item.name}</h4>
