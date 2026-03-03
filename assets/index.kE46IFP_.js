@@ -314,24 +314,26 @@ Error generating stack: `+l.message+`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 2rem 1.5rem;
   text-align: center;
-  width: min-content;
+  min-width: 100px;
+  max-width: 200px;
   background-color: #fff;
   a {
     display: inline-block;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     aspect-ratio: 2;
     > img {
       max-width: 150px;
-      height: auto;
+      max-height: 100px;
     }
   }
   h4 {
     margin-inline: auto;
     font-size: 20px;
   }
-`,W0=()=>{const e=[{imgSrc:"icons/sistemPlus.png",name:"Sistem Plus Yazılım Bilgi Teknolojileri San. ve Tic. A.Ş.",href:"https://sistem.plus/"},{imgSrc:"icons/hanımeli.png",name:"Hanımeli Yemek Hizmetleri Şirketi",href:"https://hanimeliportal.com/en/login"},{imgSrc:"icons/xAkademi.png",name:"X Akademi Koçluk Eğitim Platformu",href:"https://sametkzdl.github.io/CoachWebSite/"}];return v.jsxs(B0,{id:"referencies",children:[v.jsx("h3",{children:"Referanslar "}),v.jsx("p",{children:"Hizmet verdiğim kurum ve kuruluşlar ..."}),v.jsx(H0,{children:e.map((t,n)=>v.jsxs(V0,{children:[v.jsx("a",{href:t.href,children:v.jsx("img",{alt:t.imgSrc,src:t.imgSrc})}),v.jsx("h4",{children:t.name})]},n))})]})},G0=R.div`
+`,W0=()=>{const e=[{imgSrc:"icons/sistemPlus.png",name:"Sistem Plus Yazılım Bilgi Teknolojileri San. ve Tic. A.Ş.",href:"https://sistem.plus/"},{imgSrc:"icons/basvuran_logo.png",name:"Başvuran Yapay Zeka Destekli Form Yazılımı",href:"https://basvuran.com/"},{imgSrc:"icons/fgv.jpg",name:"Fatih Gençlik Vakfı Burs Başvuru Paneli",href:"https://basvuru.fgv.org.tr/"},{imgSrc:"icons/hanımeli.png",name:"Hanımeli Yemek Hizmetleri Şirketi",href:"https://hanimeliportal.com/en/login"}];return v.jsxs(B0,{id:"referencies",children:[v.jsx("h3",{children:"Referanslar "}),v.jsx("p",{children:"Hizmet verdiğim kurum ve kuruluşlar ..."}),v.jsx(H0,{children:e.map((t,n)=>v.jsxs(V0,{children:[v.jsx("a",{href:t.href,target:"_blank",children:v.jsx("img",{alt:t.imgSrc,src:t.imgSrc})}),v.jsx("h4",{children:t.name})]},n))})]})},G0=R.div`
   width: 100%;
   padding-block: 6rem;
   text-align: center;
@@ -678,7 +680,7 @@ to {
 <p>&nbsp;&nbsp;&nbsp;Üniversitenin ilk yılında, İngilizce dil eğitimimi tamamladım ve halen eğitimime devam etmekteyim.</p>
 <p>&nbsp;&nbsp;&nbsp;2023-2024 eğitim yılı itibariyle, iş dünyasında yetkinlik kazanmanın ancak pratik deneyimle mümkün olduğunu bilerek, çevremdeki önerilerle birçok firmaya başvuru yaptım. Bu süreçte, <strong>SistemPlus</strong> firmasında yazılım geliştirme alanındaki kariyerime aktif olarak adım attım ve bu alandaki yolculuğuma devam etmekteyim.</p>
 
-`},{school:"Eğitim",role:"İstanbul",date:"Ekim 2022 -----",title:"",decription:"<h2>İstinye Üniversitesi Yönetim Bilişim Sistemleri (İngilizce)</h2>"},{school:"Dil",role:"",date:"",title:"",decription:"<ul><li>Arapça</li><li>İnglizce</li></ul>"},{school:"Hobiler",role:"",date:"",title:"",decription:"<ul><li>Yüzme</li><li>Fitness</li><li>Kitap Okuma</li></ul>"}];return v.jsxs(v.Fragment,{children:[v.jsxs(py,{children:[v.jsx("h2",{children:"Özgeçmiş"}),v.jsx(my,{href:"/cv/cv_abdulsametkazdal.pdf",download:"cv_abdulsametkazdal.pdf",children:"CV İndir"})]}),v.jsx(es,{}),v.jsx(hy,{children:e.map((t,n)=>v.jsxs(gy,{children:[v.jsxs("div",{children:[v.jsx("h2",{children:t.school}),t.role!==""&&v.jsxs("h4",{children:[t.role,"   ",v.jsx("span",{children:t.date})]})]}),v.jsxs("div",{children:[v.jsx("h2",{style:{fontSize:"24px"},children:t.title}),v.jsx("div",{dangerouslySetInnerHTML:{__html:t.decription}})]})]},n))})]})},yy=R.div`
+`},{school:"Eğitim",role:"İstanbul",date:"Ekim 2022 -----",title:"",decription:"<h2>İstinye Üniversitesi Yönetim Bilişim Sistemleri (İngilizce)</h2>"},{school:"Dil",role:"",date:"",title:"",decription:"<ul><li>Arapça</li><li>İnglizce</li></ul>"},{school:"Hobiler",role:"",date:"",title:"",decription:"<ul><li>Yüzme</li><li>Fitness</li><li>Kitap Okuma</li></ul>"}];return v.jsxs(v.Fragment,{children:[v.jsxs(py,{children:[v.jsx("h2",{children:"Özgeçmiş"}),v.jsx(my,{href:"/cv/cv_abdulsametkazdal_new.pdf",download:"cv_abdulsametkazdal_new.pdf",children:"CV İndir"})]}),v.jsx(es,{}),v.jsx(hy,{children:e.map((t,n)=>v.jsxs(gy,{children:[v.jsxs("div",{children:[v.jsx("h2",{children:t.school}),t.role!==""&&v.jsxs("h4",{children:[t.role,"   ",v.jsx("span",{children:t.date})]})]}),v.jsxs("div",{children:[v.jsx("h2",{style:{fontSize:"24px"},children:t.title}),v.jsx("div",{dangerouslySetInnerHTML:{__html:t.decription}})]})]},n))})]})},yy=R.div`
   padding: 3rem 0rem;
   > h3 {
     text-align: center;
