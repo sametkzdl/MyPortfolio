@@ -125,11 +125,14 @@ const Curtain = ({ isOpen, setIsOpen }) => {
       { title: "Next", value: 70 },
     ],
     extraSkisls: [
-      { title: "GitHub" },
-      { title: "Styled Components" },
-      { title: "React Hook Form" },
+      { title: "Next.js" },
+      { title: "Node.js" },
+      { title: "Nginx" },
+      { title: "PM2" },
+      { title: "TypeScript" },
+      { title: "PostgreSQL" },
+      { title: "MongoDB" },
       { title: "Zustand" },
-      { title: "Figma" },
     ],
   };
   return (
@@ -140,7 +143,7 @@ const Curtain = ({ isOpen, setIsOpen }) => {
         </WrapProfilePhoto>
         <h3>Abdul Samet Kazdal</h3>
         <h4 style={{ fontWeight: "300", color: "#767676" }}>
-          Front-end (Web site) Geliştiricisi
+          Full-Stack (Web Uygulamaları) Geliştiricisi
         </h4>
       </div>
       <div>
@@ -190,7 +193,7 @@ const Curtain = ({ isOpen, setIsOpen }) => {
           );
         })}
       </div>
-      <div style={{ textAlign: "left" }}>
+      {/* <div style={{ textAlign: "left" }}>
         <h3 style={{ marginBottom: "0" }}>Deneyim</h3>
         {values.skills.map((item, index) => {
           return (
@@ -211,9 +214,9 @@ const Curtain = ({ isOpen, setIsOpen }) => {
             </div>
           );
         })}
-      </div>
+      </div> */}
       <div style={{ textAlign: "left" }}>
-        <h3>İlaveler</h3>
+        <h3>Beceriler</h3>
         {values.extraSkisls.map((item, index) => {
           return (
             <div

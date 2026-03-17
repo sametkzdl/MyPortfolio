@@ -46,15 +46,10 @@ const Services = () => {
       decription: "E-ticaret, Admin paneli",
     },
     {
-      title: "WordPress",
+      title: "WordPres/Shopify",
       imgSrc: "images/wordPress.svg",
-      decription: "WordPress site yapımı",
-    },
-    {
-      title: "Blog Web Siteleri",
-      imgSrc: "images/blogWebsite.svg",
-      decription: "Kişiye özel site ",
-    },
+      decription: "WordPress/Shopify site geliştirme",
+    }
   ];
   return (
     <Wrap id="services">

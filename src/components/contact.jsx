@@ -220,7 +220,7 @@ const Contact = () => {
                     >
                       <h3>{title}:</h3>
                       {href ? (
-                        <a href={href}>
+                        <a target="_blank" rel="noopener noreferrer" href={href}>
                           <span>{value}</span>
                         </a>
                       ) : (

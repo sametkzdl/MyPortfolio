@@ -86,7 +86,7 @@ const Banner = ({ isOpen }) => {
     <Wrap id="banner">
       <WrapDetail>
         <h1>
-          Merhaba, ben Abdul Samet Kazdal <span>Front-end (Web Site)</span>{" "}
+          Merhaba, ben Abdul Samet Kazdal <span>Full-Stack (Web Uygulama)</span>{" "}
           Geliştiricisi
         </h1>
         <p>
