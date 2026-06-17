@@ -60,6 +60,11 @@ const References = () => {
       href: "https://basvuran.com/",
     },
     {
+      imgSrc: "icons/kasgariyye.jpeg",
+      name: "Kaşgariyye Türkçe Etimolojik Sözlük ve Yönetim Paneli",
+      href: "https://kasgariyye.com/",
+    },
+    {
       imgSrc: "icons/fgv.jpg",
       name: "Fatih Gençlik Vakfı Burs Başvuru Paneli",
       href: "https://basvuru.fgv.org.tr/",
