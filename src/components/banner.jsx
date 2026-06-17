@@ -47,7 +47,9 @@ const WrapPhoto = styled.div`
     width: 20rem;
     aspect-ratio: 15/16;
     object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 6px, rgba(0, 0, 0, 0.4) -3px -3px 6px;
+    box-shadow:
+      rgba(0, 0, 0, 0.4) 3px 3px 6px,
+      rgba(0, 0, 0, 0.4) -3px -3px 6px;
     animation-name: ${getPhoto};
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -100,7 +102,7 @@ const Banner = ({ isOpen }) => {
         <div>
           <img
             $isOpen={isOpen}
-            src={isOpen ? "images/bgProfilePhoto.jpg" : "images/myPhoto.jpg"}
+            src={isOpen ? "images/bgProfilePhoto.jpg" : "images/myPhoto.jpeg"}
           />
         </div>
       </WrapPhoto>

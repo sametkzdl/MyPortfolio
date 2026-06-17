@@ -55,7 +55,9 @@ const WrapProfilePhoto = styled.div`
     width: 10rem;
     aspect-ratio: 15/16;
     object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 6px, rgba(0, 0, 0, 0.4) -3px -3px 6px;
+    box-shadow:
+      rgba(0, 0, 0, 0.4) 3px 3px 6px,
+      rgba(0, 0, 0, 0.4) -3px -3px 6px;
   }
 `;
 
@@ -83,8 +85,11 @@ const Arrow = styled.div`
   transform: translateY(50%);
   background-color: ${theme.primary};
   height: ${({ $click }) => ($click ? "70px" : "60px")};
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   clip-path: ${({ $click }) =>
     $click
@@ -139,7 +144,7 @@ const Curtain = ({ isOpen, setIsOpen }) => {
     <Wrap $click={isOpen}>
       <div>
         <WrapProfilePhoto>
-          <img src={"images/myPhoto.jpg"} />
+          <img src={"images/myPhoto.jpeg"} />
         </WrapProfilePhoto>
         <h3>Abdul Samet Kazdal</h3>
         <h4 style={{ fontWeight: "300", color: "#767676" }}>
